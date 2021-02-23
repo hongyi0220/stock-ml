@@ -1,0 +1,14 @@
+.Button {
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-style: none;
+    border-color: #000;
+    background: linear-gradient(
+            90deg
+            , #558ec3, #2653ba);
+    height: 30px;
+    width: 95px;
+    border-radius: 20px;
+    color: #fff;
+}

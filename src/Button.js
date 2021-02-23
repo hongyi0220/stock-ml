@@ -1,8 +1,8 @@
-
+import './Button.css';
 
 function Button(props) {
     return (
-        <button type='button'>
+        <button className={`Button Button--${props.mod}`} type={props.type}>
             {props.text}
         </button>
     );

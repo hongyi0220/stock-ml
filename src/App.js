@@ -6,7 +6,7 @@ function App() {
     }
   return (
     <div className='App' style={backgroundStyle}>
-        <AuthForm title='Login'/>
+        <AuthForm title='User Login'/>
     </div>
   );
 }

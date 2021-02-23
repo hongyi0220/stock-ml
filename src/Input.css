@@ -1,0 +1,26 @@
+.InputContainer {
+    position: relative;
+    margin-bottom: .8rem;
+}
+.InputContainer__Label {
+    position: absolute;
+    left: 20%;
+    top: 5px;
+    transition: 0.2s;
+    pointer-events: none;
+}
+.InputContainer__Input {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000;
+    background-color: #e7e7e7;
+    border-style: none;
+    height: 35px;
+}
+.InputContainer__Input:focus + .InputContainer__Label {
+    margin-top: -1.25rem;
+    font-size: .8rem;
+}
+.InputContainer__Input:focus {
+    outline: none;
+}
