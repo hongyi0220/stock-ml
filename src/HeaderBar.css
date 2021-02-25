@@ -1,0 +1,9 @@
+.HeaderBar {
+    height: 70px;
+    background: linear-gradient(
+            90deg
+            , #558ec3, #2653ba);
+    box-shadow: 0px 0px 8px 1px;
+    position: relative;
+    z-index: 2;
+}

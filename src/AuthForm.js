@@ -1,6 +1,7 @@
 import Button from './Button';
 import Input from './Input';
 import './AuthForm.css';
+import NavButton from "./NavButton";
 
 function AuthForm(props) {
     return (
