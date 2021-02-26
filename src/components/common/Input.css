@@ -1,10 +1,11 @@
 .InputContainer {
     position: relative;
     margin-bottom: .8rem;
+    width: fit-content;
 }
 .InputContainer__Label {
     position: absolute;
-    left: 20%;
+    left: 7%;
     top: 5px;
     transition: 0.2s;
     pointer-events: none;

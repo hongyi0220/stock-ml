@@ -21,4 +21,8 @@
     font-size: 1.2rem;
     font-weight: 900;
 }
+.AuthForm__Input {
+    left: 50%;
+    transform: translateX(-50%);
+}
 

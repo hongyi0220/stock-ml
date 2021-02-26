@@ -1,0 +1,19 @@
+.CLFContainer {
+    border: 5px solid;
+    box-sizing: border-box;
+    width: 320px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+}
+.CLFContainer__StockSearchBox {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.CLFContainer__SearchDropdownMenu {
+
+}
+.CLFContainer__Result {
+
+}
