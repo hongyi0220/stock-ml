@@ -1,5 +1,5 @@
 import './SideNavBar.css';
-import NavButton from "./common/NavButton";
+import NavButton from "../common/NavButton";
 
 function SideNavBar() {
     return (

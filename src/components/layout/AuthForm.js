@@ -1,7 +1,7 @@
-import Button from './common/Button';
-import Input from './common/Input';
+import Button from '../common/Button';
+import Input from '../common/Input';
 import './AuthForm.css';
-import NavButton from "./common/NavButton";
+import NavButton from "../common/NavButton";
 
 function AuthForm(props) {
     return (

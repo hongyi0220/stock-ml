@@ -1,8 +1,8 @@
 import './App.css';
-import AuthForm from "./components/AuthForm";
-import SideNavBar from "./components/SideNavBar";
-import HeaderBar from "./components/common/HeaderBar";
-import ContentContainer from "./components/ContentContainer";
+import AuthForm from "./AuthForm";
+import SideNavBar from "./SideNavBar";
+import HeaderBar from "../common/HeaderBar";
+import ContentContainer from "./ContentContainer";
 
 function App() {
     return (

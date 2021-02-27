@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import Button from './common/Button';
+import Button from './Button';
 
-test('renders button', () => {
+test('renders Button', () => {
     render(<Button />);
     //screen.debug();
     //screen.getByRole('');
