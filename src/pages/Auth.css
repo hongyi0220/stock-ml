@@ -1,0 +1,12 @@
+.Auth {
+    height: 100%;
+}
+.Auth__WallPaper {
+    background-image: url('../asseets/stonks.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    position: absolute;
+    z-index: -1;
+}
