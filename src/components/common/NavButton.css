@@ -19,3 +19,7 @@
     color: gray;
     font-weight: 500;
 }
+
+.NavButton:hover {
+    cursor: default;
+}

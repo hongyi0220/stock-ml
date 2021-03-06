@@ -9,7 +9,13 @@ function App() {
     return (
         <div className='App'>
             <Switch>
-                <Route exact path={/\/home|\/dashboard|\/predict/}>
+                <Route exact path='/'>
+                    <Auth />
+                    {/*
+                    <Redirect from='/*' to='/' />
+                */}
+                </Route>
+                <Route path={/\/home|\/dashboard|\/predict/}>
                     <Home />
                 </Route>
                 {/*
@@ -20,9 +26,8 @@ function App() {
                    <Predict />
                 </Route>
                 */}
-                <Route path='/'>
-                    <Auth />
-                    <Redirect from='/*' to='/'/>
+                <Route path='/*'>
+                    <div><h1>Page Not Found :(</h1></div>
                 </Route>
             </Switch>
         </div>

@@ -1,11 +1,19 @@
 import AuthForm from "../components/layout/AuthForm";
 import './Auth.css';
+import {useAuth0} from '@auth0/auth0-react';
+import Input from '../components/common/Input';
+import Button from '../components/common/Button';
 
 function Auth() {
+    const { loginWithRedirect } = useAuth0();
+    const handleLoginButtonClick = () => {
+        loginWithRedirect({redirectUri: 'http://localhost:3000/home'});
+    }
+
     return (
         <div className='Auth'>
-            <AuthForm title='User Login'/>
-            <div className='Auth__WallPaper'></div>
+            <Button className='Auth__Button' mod='Medium' text='Continue' type='submit' handleClick={handleLoginButtonClick} />
+            <div className='Auth__WallPaper'/>
         </div>
 
     );

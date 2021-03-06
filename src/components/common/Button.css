@@ -10,3 +10,19 @@
     border-radius: 20px;
     color: #fff;
 }
+
+.Button--Medium {
+    background-color: #fff;
+    margin-top: 1rem;
+    border-style: none;
+    background: linear-gradient(
+            90deg
+            , #558ec3, #2653ba);
+    height: 50px;
+    width: 125px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0px 0px 60px 30px #ffffff;
+    border: 1.5px solid #3a3a3a;
+}
