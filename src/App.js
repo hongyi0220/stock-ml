@@ -2,6 +2,7 @@ import './App.css';
 import Auth from './pages/Auth';
 import Home from './pages/Home';
 import { Route, Redirect, Switch } from 'react-router-dom';
+import ProtectedRoute from './auth/protected-route';
 import Dashboard from './pages/Dashboard';
 import Predict from './pages/Predict';
 
@@ -15,9 +16,7 @@ function App() {
                     <Redirect from='/*' to='/' />
                 */}
                 </Route>
-                <Route path={/\/home|\/dashboard|\/predict/}>
-                    <Home />
-                </Route>
+                <ProtectedRoute path={/\/home|\/dashboard|\/predict/} component={Home} />
                 {/*
                 <Route path='/dashboard'>
                     <Dashboard />

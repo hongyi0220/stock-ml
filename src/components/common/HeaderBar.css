@@ -7,3 +7,20 @@
     position: relative;
     z-index: 2;
 }
+
+.HeaderBar__Username {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    cursor: default;
+}
+
+.HeaderBar__Logo {
+    height: 65%;
+    top: 50%;
+    left: 1em;
+    transform: translateY(-50%);
+    position: absolute;
+}

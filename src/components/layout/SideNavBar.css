@@ -11,3 +11,7 @@
     z-index: 1;
     height: calc(100% - 70px);
 }
+
+.SideNavBar a  {
+    text-decoration: none;
+}
