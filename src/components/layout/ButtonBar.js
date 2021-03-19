@@ -21,3 +21,6 @@ function ButtonBar() {
 }
 
 export default ButtonBar;
+
+//TODO:
+//  []clicking buttons in ButtonBar triggers fetch request for resources
