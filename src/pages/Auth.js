@@ -1,7 +1,5 @@
-import AuthForm from "../components/layout/AuthForm";
 import './Auth.css';
 import {useAuth0} from '@auth0/auth0-react';
-import Input from '../components/common/Input';
 import Button from '../components/common/Button';
 
 function Auth() {

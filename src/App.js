@@ -3,31 +3,26 @@ import Auth from './pages/Auth';
 import Home from './pages/Home';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import ProtectedRoute from './auth/protected-route';
-import Dashboard from './pages/Dashboard';
-import Predict from './pages/Predict';
+import {useAuth0} from '@auth0/auth0-react';
+import Loading from './components/common/Loading';
 
 function App() {
+    const { isAuthenticated, isLoading, user } = useAuth0();
+    console.log('isAuthenticated:', isAuthenticated)
+    console.log('user:', user)
+
     return (
         <div className='App'>
             <Switch>
-                <Route exact path='/'>
-                    <Auth />
-                    {/*
-                    <Redirect from='/*' to='/' />
-                */}
-                </Route>
-                <ProtectedRoute path={/\/home|\/dashboard|\/predict/} component={Home} />
-                {/*
-                <Route path='/dashboard'>
-                    <Dashboard />
-                </Route>
-                <Route path='/predict'>
-                   <Predict />
-                </Route>
-                */}
+
+                <Route exact path='/' component={Auth} />
+
+                <Route path={['/home', '/dashboard', '/prediction']} render={() => (isLoading ? <Loading /> : (isAuthenticated ? <Home /> : <Redirect to='/' />))} />
+
                 <Route path='/*'>
                     <div><h1>Page Not Found :(</h1></div>
                 </Route>
+
             </Switch>
         </div>
     );

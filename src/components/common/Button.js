@@ -1,9 +1,10 @@
 import './Button.css';
 
-function Button({ mod, type, text, className, handleClick }) {
+function Button(props) {
+
     return (
-        <button className={`${className} Button Button--${mod}`} type={type} onClick={handleClick}>
-            {text}
+        <button className={`${props.className} Button Button--${props.mod}`} type={props.type} onClick={props.handleClick}>
+                {props.text}
         </button>
     );
 }

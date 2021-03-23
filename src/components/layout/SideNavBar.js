@@ -14,10 +14,12 @@ function SideNavBar() {
             <Link to='/dashboard'>
                 <NavButton icon='insert_chart' label='Dashboard' />
             </Link>
-            <Link to='/predict'>
+
+            <Link to='/prediction'>
                 <NavButton icon='lightbulb' label='Prediction' />
             </Link>
-                <NavButton icon='logout' label='Logout' handleClick={handleLogoutButtonClick}/>
+
+            <NavButton icon='logout' label='Logout' handleClick={handleLogoutButtonClick}/>
         </div>
     );
 }
