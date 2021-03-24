@@ -19,7 +19,7 @@ function ContentContainer(props) {
                 <Route exact path={['/dashboard/feature-correlation', '/dashboard/feature-importance', '/dashboard/confusion-matrix', '/dashboard']} render={() => <DashboardContent setImageSrc={setImageSrc} imageSrc={imageSrc} error={error} setError={setError}/>} />
 
                 <Route path='/prediction'>
-                    <CLFContainer />
+                    <CLFContainer setError={setError} />
                 </Route>
 
                 <Route path='/*'>
