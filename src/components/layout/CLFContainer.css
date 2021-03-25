@@ -1,12 +1,11 @@
 .CLFContainer {
-    border: 5px solid;
     box-sizing: border-box;
     width: 320px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 350px;
+    height: 250px;
 }
 
 .CLFContainer__StockSearchBox {
@@ -15,18 +14,23 @@
 }
 
 .CLFContainer__SearchDropdownMenu {
-    border: 3px solid black;
     max-height: 100px;
     overflow-y: scroll;
-    width: 190px;
-}
-.CLFContainer__SearchDropdownMenu {
+    width: 164px;
+    border-radius: 5px;
+    background-color: #e7e7e7c9;
     cursor: pointer;
+    left: 22px;
+    top: 54px;
+    position: absolute;
+    z-index: 1;
+    font-weight: 500;
 }
+
 .CLFContainer__Result {
     position: absolute;
     width: 100%;
-    bottom: 1em;
+    top: 6em;
 }
 
 .CLFContainer__Result__StockName {

@@ -3,7 +3,16 @@
     padding: 1.5rem 0 1.5rem 0;
 }
 
-.NavButton__Selected {
+.NavButton:hover > .NavButton__Selected {
+    border: 3px solid #3E71BF;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.NavButton__Selected--Clicked {
     border: 3px solid #3E71BF;
     height: 100%;
     display: inline-block;
