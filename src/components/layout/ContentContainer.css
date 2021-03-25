@@ -3,7 +3,7 @@
     border: 5px solid;
     box-sizing: border-box;
     left: 110px;
-    position: relative;
+    position: absolute;
     width: calc(100% - 110px);
     min-height: 120px;
 }

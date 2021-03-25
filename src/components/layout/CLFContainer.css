@@ -4,17 +4,48 @@
     width: 320px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     height: 350px;
 }
+
 .CLFContainer__StockSearchBox {
     display: inline-block;
     margin-right: 1rem;
 }
+
 .CLFContainer__SearchDropdownMenu {
     border: 3px solid black;
-    min-height: 300px;
+    max-height: 100px;
+    overflow-y: scroll;
+    width: 190px;
+}
+.CLFContainer__SearchDropdownMenu {
+    cursor: pointer;
 }
 .CLFContainer__Result {
+    position: absolute;
+    width: 100%;
+    bottom: 1em;
+}
 
+.CLFContainer__Result__StockName {
+    display: inline-block;
+    width: 50%;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.CLFContainer__Result__BuyOrSkip {
+    display: inline-block;
+    width: 50%;
+    font-size: larger;
+}
+
+.CLFContainer__Result__BuyOrSkip--Green {
+    color: Green;
+}
+
+.CLFContainer__Result__BuyOrSkip--Red {
+    color: Red;
 }

@@ -51,19 +51,19 @@ function DashboardContent(props) {
         <Switch>
 
             <Route exact path='/dashboard/feature-correlation'>
-                {'Feature Correlation Description'}
+                {<p>Feature Correlation Description</p>}
             </Route>
 
             <Route exact path='/dashboard/feature-importance'>
-                {'Feature Importance Description'}
+                {<p>Feature Importance Description</p>}
             </Route>
 
             <Route exact path='/dashboard/confusion-matrix'>
-                {'Confusion Matrix Description'}
+                {<p>Confusion Matrix Description</p>}
             </Route>
 
             <Route exact path='/dashboard'>
-                {'Welcome to Your Dashboard!'}
+                {<p>Welcome to Your Dashboard!</p>}
             </Route>
 
         </Switch>
