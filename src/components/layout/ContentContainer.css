@@ -6,3 +6,9 @@
     width: calc(100% - 110px);
     min-height: 120px;
 }
+h1 {
+    padding: 2em;
+}
+h2 {
+    padding: 2em;
+}

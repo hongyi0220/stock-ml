@@ -14,6 +14,13 @@ function ContentContainer(props) {
 
                 <Route path='/home'>
                     {/* Content */}
+                        <h1>
+                            Simplify Your Stock Research.
+                        </h1>
+                        <h2>
+                        Stock prediction software that uses machine learning to make stock recommendations
+                        </h2>
+
                 </Route>
 
                 <Route exact path={['/dashboard/feature-correlation', '/dashboard/feature-importance', '/dashboard/confusion-matrix', '/dashboard']} render={() => <DashboardContent setImageSrc={setImageSrc} imageSrc={imageSrc} error={error} setError={setError}/>} />
