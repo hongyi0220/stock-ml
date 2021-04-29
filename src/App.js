@@ -2,7 +2,6 @@ import './App.css';
 import Auth from './pages/Auth';
 import Home from './pages/Home';
 import { Route, Redirect, Switch } from 'react-router-dom';
-import ProtectedRoute from './auth/protected-route';
 import {useAuth0} from '@auth0/auth0-react';
 import Loading from './components/common/Loading';
 
